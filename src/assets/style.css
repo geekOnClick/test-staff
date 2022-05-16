@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background: whitesmoke
+}
+.wrap {
+height: 100vh;
+}
+.navbar {
+padding-left: 50px;
+}
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wrap__list {
+  max-width: 730px;
+  margin-top: 60px;
+}
+.btn-flex {
+max-width: 730px;
+width: inherit;
+display: flex;
+justify-content: flex-end;
+}
+.btn {
+margin-top: 50px;
+}
+.btn-primary {
+content: 'JNV';
+}
+.btnAdd {
+width: 150px;
+}
+.actions {
+  width: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.action {
+  cursor: pointer;
+}
+.modal-footer {
+justify-content: flex-start;
+}
+table .flip-list-move {
+transition: transform 1s;
+}
+.myclass > div {
+width: 400px !important;
+position:absolute !important;
+top: 273px !important;
+right: 50px !important;
+background-color:yellow !important;
+}
+.custom-select {
+-webkit-appearance: auto;
+-moz-appearance: auto;
+}
+.form-group {
+padding-top: 12px;
+}
+.close {
+border: 0;
+background-color: white;
+}
+.error {
+  color: red;
+  margin: 7px 0 0 20px;
+  font-size: 14px;
+}
+.errorBox {
+  border: 1px solid red;
+}
+.successBox {
+  border: 1px solid green;
+}
+/* td.newBoss::before {
+content: "+";
+padding-right: 10px;
+} */
+
+.newBoss::before {
+content: "+";
+padding-right: 10px;
+}
+
+.staffClass {
+  display: flex;
+  justify-content: flex-end;
+  width: 122px;
+  color: blueviolet;
+}
