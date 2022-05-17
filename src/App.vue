@@ -82,6 +82,7 @@
       primary-key="Имя"
       :tbody-transition-props="transProps"
       ref="items"
+      :sort-by= "name"
     >
     </b-table>
   </div>
@@ -112,6 +113,7 @@ export default {
   },
   data () {
     return {
+      sortBy: 'name',
       headVariant: 'dark',
       name: '',
       phone: '',
@@ -146,6 +148,7 @@ export default {
         'Начальник': this.boss,
         'Подчиненные': []
       }
+      this.sortBy = false
       this.ADD_USER(newUser)
       // this.getBossName.forEach(el => {
       //   this.$refs.items.$refs['item-rows'].forEach(element => {
